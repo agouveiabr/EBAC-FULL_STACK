@@ -97,24 +97,24 @@ form{
 	margin: 40px 0;
 }
 
-form label{
+form label, form p{
 	display: block;
 	font-size: 18px;
 	font-weight: bold;
 	margin: 10px 0 2px 0;
 }
 
-form input{
+.input-padrao{
 	display: block;
 	margin-bottom: 15px;
 	padding: 6px;
 	width: 50%;
 }
 
-#contato{
-	font-weight: bold;
-}
-
 #contato label{
 	font-weight: normal;
+}
+
+.checkbox{
+	margin: 20px 0;
 }
