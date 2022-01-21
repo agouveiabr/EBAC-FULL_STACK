@@ -97,7 +97,7 @@ form{
 	margin: 40px 0;
 }
 
-form label, form p{
+form label, form legend{
 	display: block;
 	font-size: 18px;
 	font-weight: bold;
@@ -117,4 +117,8 @@ form label, form p{
 
 .checkbox{
 	margin: 20px 0;
+}
+
+#horario{
+	margin-top: 8px;
 }
