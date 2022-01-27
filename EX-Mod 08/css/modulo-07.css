@@ -1,0 +1,136 @@
+/* Importando CSS de Tabelas */
+@import url("tabelas.css");
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+html {
+  font-family: sans-serif;
+  color: #333333;
+}
+
+p {
+  color: #454545;
+}
+
+header p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+header h2 {
+  font-weight: 100;
+}
+
+header > h2 {
+  font-weight: 600;
+}
+
+h2 + p {
+  padding: 10px;
+  margin: 10px;
+  background: #ff0;
+  border-radius: 3px;
+  color: #333;
+}
+
+div ~ p {
+  text-transform: uppercase;
+}
+
+/* Pseudo-classes */
+
+a {
+  color: #555555;
+  text-decoration: none; /* o padrão é underline */
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a:visited {
+  color: #f00;
+}
+
+a:active {
+  color: #096;
+}
+
+h2:hover {
+  color: #59deeb;
+}
+
+/* 
+	Tipografia
+*/
+
+html {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  font-family: "Limelight", cursive;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+h3 {
+  /* declaração resumida / completa */
+  font: italic bold 1.2rem/2 sans-serif;
+}
+
+/* 
+
+	Cores
+
+*/
+
+body {
+  background: url("../images/pattern.png") center top repeat #eeeeee;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+p {
+  color: blue;
+  color: #034589;
+}
+
+header,
+footer {
+  background-color: #034589;
+}
+
+footer p {
+  color: rgb(255, 255, 255);
+}
