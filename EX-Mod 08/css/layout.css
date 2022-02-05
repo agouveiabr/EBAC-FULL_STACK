@@ -64,7 +64,7 @@ header {
 
 article {
   float: left;
-  padding: 20px;
+  padding-bottom: 5px;
   width: 70%;
 }
 
@@ -81,9 +81,8 @@ footer {
   color: white;
 }
 
-@media (max-width: 600px) {
-  nav,
-  article {
+@media (max-width: 425px) {
+  div {
     width: 100%;
     height: auto;
   }

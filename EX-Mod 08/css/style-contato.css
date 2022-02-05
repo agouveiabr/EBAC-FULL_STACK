@@ -67,11 +67,7 @@ a {
 }
 
 p {
-  font-size: 1.6rem; /* equivalente a 16px */
-}
-
-h2 {
-  height: 3rem;
+  font-size: 15px; /* equivalente a 16px */
 }
 
 .navegacao {
