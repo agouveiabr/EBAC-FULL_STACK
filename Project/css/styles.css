@@ -16,8 +16,14 @@ body {
   width: 100vw;
   display: block;
   float: left;
-  padding: 20px;
   margin: 0 auto;
+  padding: 20px;
+  max-width: 1823px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 header {
@@ -124,6 +130,21 @@ footer small {
   display: block;
 }
 
-script {
-  margin: 200px;
+.cog-form__content {
+  margin: 20px 0 !important;
+  background-color: #72aadb !important;
+  height: 400px !important;
+  overflow: hidden !important;
+  padding: 5px !important;
+}
+
+@media screen and (max-width: 425px) {
+  section nav,
+  section article {
+    width: 90vw;
+  }
+
+  .container {
+    width: 81vw;
+  }
 }
