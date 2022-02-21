@@ -10,6 +10,7 @@ body {
   display: block;
   max-width: 100vw;
   margin: 0 auto;
+  background-color: #f4f6ff;
 }
 
 .container {
@@ -31,7 +32,6 @@ header {
   padding: 20px;
   display: block;
   float: left;
-  border-radius: 3px;
   border-bottom: 2px solid #294e6e;
   margin-bottom: 10px;
 }
@@ -114,9 +114,7 @@ section article {
 
 footer {
   background-color: #294e6e;
-  border-radius: 3px;
   color: #fff;
-  margin-top: 15px;
   padding: 20px;
   float: left;
 }
@@ -132,10 +130,14 @@ footer small {
 
 .cog-form__content {
   margin: 20px 0 !important;
-  background-color: #72aadb !important;
+  background-color: #ecf2f7 !important;
   height: 400px !important;
   overflow: hidden !important;
   padding: 5px !important;
+}
+
+.cog-form__container {
+  background-color: #ecf2f7 !important;
 }
 
 @media screen and (max-width: 425px) {
@@ -147,4 +149,94 @@ footer small {
   .container {
     width: 81vw;
   }
+}
+
+#banner {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 97.01vw;
+  height: 60vh;
+  border-radius: 3px;
+}
+
+.legenda-container {
+  width: 372px;
+  float: right;
+  margin: 180px 180px 0 0;
+}
+
+.legenda {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.legenda h4,
+.legenda h5 {
+  line-height: 2rem;
+}
+
+.btn-cta {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 3px 3px 10px black;
+  background-color: rgba(255, 183, 0, 0.9);
+  width: 120px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  float: left;
+}
+
+.btn-cta:hover {
+  padding-top: 15px;
+  width: 128px;
+  height: 23px;
+  box-shadow: 4px 4px 10px black;
+  font-size: 16px;
+}
+
+#saiba-mais p,
+#saiba-mais img {
+  float: left;
+  width: 45%;
+  padding: 20px;
+}
+
+#saiba-mais p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 3rem;
+  font-weight: 100;
+  margin-top: 80px;
+}
+
+#saiba-mais {
+  background-color: #f4f6ff;
+  width: 150vw;
+}
+
+#tenho-interesse {
+  display: inline-block;
+  background-color: #bad5ec;
+  width: 97.01vw;
+}
+
+section.container {
+  background-color: #f4f6ff;
+}
+
+dl {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+dd {
+  margin: 5px 0 10px 20px;
 }
