@@ -140,17 +140,6 @@ footer small {
   background-color: #ecf2f7 !important;
 }
 
-@media screen and (max-width: 425px) {
-  section nav,
-  section article {
-    width: 90vw;
-  }
-
-  .container {
-    width: 81vw;
-  }
-}
-
 #banner {
   background-image: url(../images/banner.png);
   background-repeat: no-repeat;
@@ -239,4 +228,69 @@ dl {
 
 dd {
   margin: 5px 0 10px 20px;
+}
+
+@media screen and (max-width: 425px) {
+  section {
+    background-color: #f4f6ff;
+  }
+
+  section nav,
+  section article {
+    width: 90vw;
+  }
+
+  .container {
+    width: 79vw;
+    padding: 0;
+  }
+
+  header,
+  footer {
+    float: none;
+    display: inline-block;
+    width: 89vw;
+    height: 10vw;
+  }
+
+  h1 {
+    margin-left: 10px;
+  }
+
+  #saiba-mais {
+    width: 81vw;
+  }
+
+  #saiba-mais p,
+  #saiba-mais img {
+    font-size: 1.5em;
+    width: 81vw;
+    margin-top: 0;
+    margin-left: 12px;
+  }
+
+  #banner {
+    background-size: contain;
+    width: 90%;
+    height: 19vh;
+  }
+
+  .legenda-container {
+    margin: 194px 0 0 0;
+    float: none;
+    width: 110%;
+  }
+
+  .btn-cta {
+    margin-bottom: 15px;
+    margin-left: 80px;
+  }
+
+  #tenho-interesse {
+    width: 90%;
+  }
+
+  dl {
+    margin-left: 30px;
+  }
 }
