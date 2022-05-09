@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
+    <title>Site com BootStrap</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Site com BootStrap</h1>
+          </div>
+          <nav class="navbar navbar-light bg-light col-6">
+            <a class="nav-link navbar-brand" href="#home">Home</a>
+            <a class="nav-link navbar-brand" href="#sobre">Sobre</a>
+            <a class="nav-link navbar-brand" href="#produtos">Produtos</a>
+            <a class="nav-link navbar-brand" href="#contato">Contato</a>  
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+    <section id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <h1>Sobre</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam rem
+              quod culpa quos suscipit porro, temporibus hic numquam ullam
+              accusamus pariatur ipsam perspiciatis cupiditate optio, dolore
+              tenetur expedita? Suscipit, aperiam!
+            </p>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <img
+              src="./images/pexels-josh-sorenson-1714208.jpg"
+              alt="Imagem Tecnologia"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <div class="container">
+        <div class="row">
+          <h1>Produtos</h1>
+          <div class="col-md-4 col-sm-12">
+            <img
+              src="./images/pexels-nao-triponez-792224.jpg"
+              alt="Imagem Tecnologia"
+              class="img-fluid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lente de Camera</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a data-bs-toggle="modal" data-bs-target="#modal-1" class="btn btn-primary"> Ver Produto </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img
+              src="./images/pexels-nao-triponez-129208.jpg"
+              alt="Imagem Tecnologia"
+              class="img-fluid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Notebook</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a data-bs-toggle="modal" data-bs-target="#modal-2" class="btn btn-primary"> Ver Produto </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img
+              src="./images/pexels-nao-triponez-132545.jpg"
+              alt="Imagem Tecnologia"
+              class="img-fluid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Camera Fotografica</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a data-bs-toggle="modal" data-bs-target="#modal-3" class="btn btn-primary"> Ver Produto </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h1>Contato</h1>
+            <form>
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  class="form-control"
+                  id="mensagem"
+                  rows="3"
+                  placeholder="Digite sua mensagem"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-success botao-form">
+                Enviar
+              </button>
+            </form>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h1>Localização</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.90781809898!2d-46.6330098!3d-23.558971999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f9f8f8f8f3%3A0x9f8f8f8f8f8f8f8f!2sR.+S%C3%A9rgio+de+S%C3%A3o+Paulo%2C+S%C3%A3o+Paulo+-+SP%2C+03730-000!5e0!3m2!1spt-BR!2sbr!4v155909818098"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Produto 1</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></div>
+          <div class="modal-body">
+            <h6>Confira o Modelo e os Preços</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Lente</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>50mm</td>
+                  <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                  <td>80mm</td>
+                  <td>R$ 2.000,00</td>
+                </tr>
+                <tr>
+                  <td>105mm</td>
+                  <td>R$ 3.000,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Produto 1</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></div>
+          <div class="modal-body">
+            <h6>Confira o Tamanho e os Preços</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Armazenameto</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>128GB SSD</td>
+                  <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                  <td>256GB SSD</td>
+                  <td>R$ 2.000,00</td>
+                </tr>
+                <tr>
+                  <td>512GB SSD</td>
+                  <td>R$ 3.000,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Produto 1</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></div>
+          <div class="modal-body">
+            <h6>Confira o Modelo e os Preços</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Modelo</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Canon</td>
+                  <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                  <td>Sony</td>
+                  <td>R$ 2.000,00</td>
+                </tr>
+                <tr>
+                  <td>Nikon</td>
+                  <td>R$ 3.000,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
