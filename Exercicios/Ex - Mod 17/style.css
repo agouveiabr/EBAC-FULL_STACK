@@ -1,0 +1,35 @@
+body {
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(65, 36, 36);
+}
+.navbar {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.navbar-brand {
+  color: rgb(88, 88, 88) !important;
+}
+
+.navbar-brand:hover {
+  color: rgb(65, 36, 36) !important;
+  font-weight: 700;
+}
+
+.botao-form,
+.form-group,
+header {
+  margin-top: 16px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+#carouselProdutos img {
+  height: 700px;
+}
