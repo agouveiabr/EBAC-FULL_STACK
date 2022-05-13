@@ -12,6 +12,11 @@ a {
   text-decoration: none !important;
 }
 
+.invalid {
+  border: 3px solid red;
+  opacity: 0.8;
+}
+
 .copyright-text {
   text-transform: uppercase;
 }
