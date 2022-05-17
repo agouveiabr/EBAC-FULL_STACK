@@ -188,6 +188,19 @@ a {
   font-weight: 700;
   margin-bottom: 0px;
 }
+
+.featured-item a {
+  color: white;
+}
+
+.featured-item .desconto {
+  color: black;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
 .owl-theme .owl-dots {
   text-align: center;
   margin-top: 30px;

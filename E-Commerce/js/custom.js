@@ -36,3 +36,7 @@ $(document).ready(function () {
     alert("Produto esgotado");
   });
 });
+
+$(function () {
+  $("#tabs").tabs();
+});
