@@ -1,37 +1,38 @@
-$(".botao-form").click(function (e) {
-  var nome = $("#nome").val();
-  var email = $("#email").val();
-  var cpf = $("#cpf").val();
-  var erro = false;
-  var msg = "";
-  if (nome.length <= 2) {
-    $("#nome").addClass("invalid");
-    msg = "Preencha o campo nome";
-    erro = true;
-  } else {
-    $("#nome").removeClass("invalid");
-  }
+// instancia jquery e evita conflitos
+// jQuery( function($){
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
 
-  if (!email.includes("@") || !email.includes(".")) {
-    $("#email").addClass("invalid");
-    msg = "Email inválido";
-    erro = true;
-  } else {
-    $("#email").removeClass("invalid");
-  }
+  let titulos = $("h4"); // tag
 
-  if (!/^\d{3}[\.]?\d{3}[\.]?\d{3}[\-]?\d{2}$/.test(cpf)) {
-    $("#cpf").addClass("invalid");
-    msg = "CPF inválido";
-    erro = true;
-  } else {
-    $("#cpf").removeClass("invalid");
-  }
+  let itens = $(".featured-item"); // class
 
-  if (erro) {
-    e.preventDefault();
-    alert(msg);
-    return false;
-  }
-  return true;
+  let destaques = $("#featured"); // id
+
+  console.log(titulos.first());
+
+  // Configuração de produtos
+
+  $(".featured-item a").addClass("btn btn-dark stretch-link");
+
+  $(".featured-item:first h4").append(
+    '<span class="badge bg-secondary">Novo</span>'
+  );
+
+  $(".featured-item h4").dblclick(function () {
+    $(this).css({
+      color: "#f00",
+      background: "#ff0",
+      "font-weight": "100",
+    });
+  });
+
+  /*
+   * Manipulação de eventos
+   */
+  $(".featured-item a").on("blur", function (event) {
+    event.preventDefault();
+
+    alert("Produto esgotado");
+  });
 });
