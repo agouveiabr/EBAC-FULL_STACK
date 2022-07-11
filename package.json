@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cavalcantemmarcelo/webpack.git"
+    "url": "git+https://github.com/agouveiabr/EBAC-FULL_STACK/tree/Webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/cavalcantemmarcelo/webpack#readme",
+  "homepage": "https://github.com/agouveiabr/EBAC-FULL_STACK/tree/Webpack",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
